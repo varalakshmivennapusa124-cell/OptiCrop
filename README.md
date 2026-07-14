@@ -91,7 +91,7 @@ The application predicts the most suitable crop.
 Clone the repository
 
 ```bash
-git clone <repository-link>
+git clone https://github.com/varalakshmivennapusa124-cell/OptiCrop.git
 ```
 
 Install dependencies
@@ -128,10 +128,19 @@ https://opticrop-smart-agricultural-production-jmgm.onrender.com/
 ![Result](screenshots/result.png)
 
 ---
+# 👩‍💻 Author
 
-## 👩‍💻 Developed By
+## Full Name
+**Vennapusa Varalakshmi**
 
-- Charishma Kongara
-- Divya Sree Sai Pagadala
-- Homarugvedha Chappidi
-- Harshitha Kuruba
+## Education
+**B.Tech – Computer Science and Engineering (CSE)**  
+Rise Krishna Sai Gandhi Group of Institutions
+
+## GitHub
+https://github.com/varalakshmivennapusa124-cell/
+
+## LinkedIn
+https://www.linkedin.com/in/vennapusa-varalakshmi-ab5231389/
+ 
+
