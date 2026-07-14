@@ -1,0 +1,88 @@
+/* General Styling */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f4f9f4;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#2e7d32;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Navigation */
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* Sections */
+
+section{
+    width:80%;
+    margin:40px auto;
+    text-align:center;
+}
+
+/* Form */
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    display:inline-block;
+}
+
+input{
+    width:250px;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Button */
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+/* Footer */
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
