@@ -33,16 +33,41 @@ The project covers the complete machine learning pipeline including:
 
 ## 📂 Project Structure
 
-```text
-OptiCrop/
+ OptiCrop-Smart-Agricultural-Production-Optimization-Engine/
+│
+├── dataset/
+│   └── Crop_recommendation.csv      # Dataset
+│
+├── flask/
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css            # Website styling
+│   │   └── js/
+│   │       └── script.js            # JavaScript
+│   │
+│   ├── templates/
+│   │   ├── index.html               # Home page
+│   │   ├── about.html               # About page
+│   │   └── findyourcrop.html        # Prediction page
+│   │
+│   ├── app.py                       # Flask backend
+│   ├── model.pkl                    # Trained ML model
+│   └── scaler.pkl                   # Feature scaler
+│
+├── screenshots/
+│   ├── about.jpg
+│   ├── home.jpg
+│   ├── predict.jpg
+│   └── result.jpg
 │
 ├── TRAINING/
-├── dataset/
-├── flask/
-├── screenshots/
-├── README.md
-└── requirements.txt
-```
+│   ├── Crop_Recommendation.ipynb    # Model training notebook
+│   ├── model.pkl                    # Generated model
+│   └── scaler.pkl                   # Generated scaler
+│
+├── LICENSE                          # MIT License
+├── README.md                        # Project documentation
+└── requirements.txt                 # Python dependencies
 
 ---
 
@@ -107,11 +132,7 @@ cd flask
 python app.py
 ```
 
-## Open in Browser
-
-https://opticrop-smart-agricultural-production-jmgm.onrender.com/
-
----
+ 
 
 ## 📸 Screenshots
 

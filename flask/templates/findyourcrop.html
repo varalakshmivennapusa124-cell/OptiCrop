@@ -1,67 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Crop - OptiCrop</title>
+
+    <title>Predict Crop | OptiCrop</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>OptiCrop: Smart Agricultural Production Optimization Engine</h1>
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fas fa-seedling"></i>
+        <span>OptiCrop</span>
+    </div>
 
     <nav>
+
         <a href="/">Home</a>
+
         <a href="/about">About</a>
-        <a href="/findyourcrop">Find Your Crop</a>
+
+        <a href="/findyourcrop">Predict Crop</a>
+
     </nav>
+
 </header>
 
-<section class="prediction-form">
+<!-- ================= HERO ================= -->
 
-    <h2>Find Your Best Crop</h2>
+<section class="predict-hero">
 
-    <form action="/predict" method="POST">
+    <h1>AI Crop Recommendation System</h1>
 
-        <label>Nitrogen</label><br>
-        <input type="number" name="nitrogen" required><br><br>
+    <p>
 
-        <label>Phosphorous</label><br>
-        <input type="number" name="phosphorous" required><br><br>
+        Enter the soil nutrients and environmental conditions below.
+        Our Machine Learning model will recommend the most suitable crop.
 
-        <label>Potassium</label><br>
-        <input type="number" name="potassium" required><br><br>
-
-        <label>Temperature</label><br>
-        <input type="number" step="any" name="temperature" required><br><br>
-
-        <label>Humidity</label><br>
-        <input type="number" step="any" name="humidity" required><br><br>
-
-        <label>pH</label><br>
-        <input type="number" step="any" name="ph" required><br><br>
-
-        <label>Rainfall</label><br>
-        <input type="number" step="any" name="rainfall" required><br><br>
-
-        <button type="submit">Predict Crop</button>
-
-    </form>
-
-    <br>
-
-    {% if prediction_text %}
-        <h2>{{ prediction_text }}</h2>
-    {% endif %}
+    </p>
 
 </section>
 
+<!-- ================= FORM ================= -->
+
+<section class="predict-container">
+
+<div class="predict-card">
+
+<h2>
+
+<i class="fas fa-leaf"></i>
+
+Crop Prediction Form
+
+</h2>
+
+<form action="/predict" method="POST">
+
+<div class="input-grid">
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-seedling"></i>
+
+Nitrogen (N)
+
+</label>
+
+<input type="number"
+name="nitrogen"
+placeholder="Enter Nitrogen value"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-seedling"></i>
+
+Phosphorous (P)
+
+</label>
+
+<input type="number"
+name="phosphorous"
+placeholder="Enter Phosphorous value"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-seedling"></i>
+
+Potassium (K)
+
+</label>
+
+<input type="number"
+name="potassium"
+placeholder="Enter Potassium value"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-temperature-high"></i>
+
+Temperature (°C)
+
+</label>
+
+<input type="number"
+step="any"
+name="temperature"
+placeholder="Temperature"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-cloud-rain"></i>
+
+Humidity (%)
+
+</label>
+
+<input type="number"
+step="any"
+name="humidity"
+placeholder="Humidity"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-flask"></i>
+
+Soil pH
+
+</label>
+
+<input type="number"
+step="any"
+name="ph"
+placeholder="pH Value"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+<i class="fas fa-cloud-showers-heavy"></i>
+
+Rainfall (mm)
+
+</label>
+
+<input type="number"
+step="any"
+name="rainfall"
+placeholder="Rainfall"
+required>
+
+</div>
+
+</div>
+
+<div class="button-area">
+
+<button type="submit" class="predict-btn">
+
+<i class="fas fa-magic"></i>
+
+Predict Best Crop
+
+</button>
+
+</div>
+
+</form>
+
+{% if prediction_text %}
+
+<div class="result-card">
+
+<h2>
+
+<i class="fas fa-award"></i>
+
+Prediction Result
+
+</h2>
+
+<h3>{{ prediction_text }}</h3>
+
+<p>
+
+This recommendation is generated using our
+Machine Learning crop prediction model based
+on the values you entered.
+
+</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</section>
+
+<!-- ================= INFORMATION ================= -->
+
+<section class="tips">
+
+<h2>Input Guidelines</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-seedling"></i>
+
+<h3>Soil Nutrients</h3>
+
+<p>
+
+Provide accurate Nitrogen, Phosphorous
+and Potassium values.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-cloud-sun"></i>
+
+<h3>Climate Data</h3>
+
+<p>
+
+Enter Temperature, Humidity
+and Rainfall values correctly.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-flask"></i>
+
+<h3>Soil pH</h3>
+
+<p>
+
+Soil pH is one of the most
+important factors in crop selection.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    <p>© 2026 OptiCrop | Smart Agricultural Production Optimization Engine</p>
+
+<h2>
+
+<i class="fas fa-seedling"></i>
+
+OptiCrop
+
+</h2>
+
+<p>
+
+Smart Agricultural Production Optimization
+Using Machine Learning
+
+</p>
+
+<hr>
+
+<p>
+
+Developed with ❤️ using Flask,
+Python, HTML, CSS, JavaScript &
+Machine Learning
+
+</p>
+
+<p>
+
+© 2026 OptiCrop. All Rights Reserved.
+
+</p>
+
 </footer>
 
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
+
 </html>

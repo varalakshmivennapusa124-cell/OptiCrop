@@ -1,46 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptiCrop - Smart Agricultural Production Optimization Engine</title>
+
+    <title>OptiCrop | Smart Agricultural Production Optimization</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>OptiCrop: Smart Agricultural Production Optimization Engine</h1>
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fas fa-seedling"></i>
+        <span>OptiCrop</span>
+    </div>
 
     <nav>
+
         <a href="/">Home</a>
+
         <a href="/about">About</a>
-        <a href="/findyourcrop">Find Your Crop</a>
+
+        <a href="/findyourcrop">Predict Crop</a>
+
     </nav>
+
 </header>
+
+<!-- ================= HERO SECTION ================= -->
 
 <section class="hero">
 
-    <h2>Smart Agriculture Using Machine Learning</h2>
+    <div class="hero-content">
+
+        <h1>
+            Smart Agriculture <br>
+            Powered by Artificial Intelligence
+        </h1>
+
+        <p>
+
+            OptiCrop is an intelligent crop recommendation system that
+            predicts the most suitable crop using Machine Learning based
+            on soil nutrients and environmental conditions.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/findyourcrop">
+
+                <button class="primary-btn">
+
+                    <i class="fas fa-leaf"></i>
+
+                    Predict Crop
+
+                </button>
+
+            </a>
+
+            <a href="/about">
+
+                <button class="secondary-btn">
+
+                    Learn More
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+
+        <h2>Project Features</h2>
+
+        <div class="feature">
+
+            <i class="fas fa-brain"></i>
+
+            <span>Machine Learning Prediction</span>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fas fa-cloud-sun"></i>
+
+            <span>Climate Analysis</span>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fas fa-seedling"></i>
+
+            <span>Soil Nutrient Evaluation</span>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fas fa-chart-line"></i>
+
+            <span>Improved Productivity</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats">
+
+    <div class="stat-box">
+
+        <i class="fas fa-check-circle"></i>
+
+        <h2>98%</h2>
+
+        <p>Prediction Accuracy</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <i class="fas fa-database"></i>
+
+        <h2>7</h2>
+
+        <p>Input Parameters</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <i class="fas fa-robot"></i>
+
+        <h2>AI</h2>
+
+        <p>Machine Learning Model</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <i class="fas fa-clock"></i>
+
+        <h2>24/7</h2>
+
+        <p>Instant Recommendation</p>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE ================= -->
+
+<section class="why">
+
+    <h2>Why Choose OptiCrop?</h2>
+
+    <p class="section-subtitle">
+
+        Making agriculture smarter through Artificial Intelligence.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fas fa-brain"></i>
+
+            <h3>AI Powered</h3>
+
+            <p>
+
+                Intelligent prediction using trained Machine Learning
+                algorithms.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-seedling"></i>
+
+            <h3>Smart Farming</h3>
+
+            <p>
+
+                Improve crop yield through scientific recommendations.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-globe"></i>
+
+            <h3>Sustainable Agriculture</h3>
+
+            <p>
+
+                Promote eco-friendly farming and efficient resource
+                utilization.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="steps">
+
+    <h2>How It Works</h2>
+
+    <div class="step-container">
+
+        <div class="step">
+
+            <div class="step-number">1</div>
+
+            <h3>Enter Soil Details</h3>
+
+            <p>
+
+                Provide Nitrogen, Phosphorous, Potassium, Temperature,
+                Humidity, pH and Rainfall values.
+
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">2</div>
+
+            <h3>AI Analysis</h3>
+
+            <p>
+
+                The Machine Learning model analyzes the provided values.
+
+            </p>
+
+        </div>
+
+        <div class="step">
+
+            <div class="step-number">3</div>
+
+            <h3>Crop Recommendation</h3>
+
+            <p>
+
+                Receive the best crop recommendation instantly.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+    <h2>Ready to Predict Your Best Crop?</h2>
 
     <p>
-        OptiCrop is an intelligent agricultural recommendation system that
-        predicts the most suitable crop based on soil nutrients and
-        environmental conditions. The application helps farmers improve
-        productivity by providing crop recommendations using machine
-        learning techniques.
+
+        Start using Artificial Intelligence for better farming decisions.
+
     </p>
 
     <a href="/findyourcrop">
-        <button>Find Your Crop</button>
+
+        <button class="primary-btn">
+
+            <i class="fas fa-arrow-right"></i>
+
+            Get Started
+
+        </button>
+
     </a>
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    <p>© 2026 OptiCrop | Smart Agricultural Production Optimization Engine</p>
+
+    <h2>
+
+        <i class="fas fa-seedling"></i>
+
+        OptiCrop
+
+    </h2>
+
+    <p>
+
+        Smart Agricultural Production Optimization
+        Using Machine Learning
+
+    </p>
+
+    <hr>
+
+    <p>
+
+        Developed with ❤️ using Flask, Python,
+        HTML, CSS, JavaScript & Machine Learning
+
+    </p>
+
+    <p>
+
+        © 2026 OptiCrop. All Rights Reserved.
+
+    </p>
+
 </footer>
 
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
+
 </html>
