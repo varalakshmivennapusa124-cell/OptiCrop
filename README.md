@@ -32,27 +32,24 @@ The project covers the complete machine learning pipeline including:
 ---
 
 ## 📂 Project Structure
-
- OptiCrop-Smart-Agricultural-Production-Optimization-Engine/
+OptiCrop-Smart-Agricultural-Production-Optimization-Engine/
 │
 ├── dataset/
-│   └── Crop_recommendation.csv      # Dataset
+│   └── Crop_recommendation.csv
 │
 ├── flask/
 │   ├── static/
 │   │   ├── css/
-│   │   │   └── style.css            # Website styling
+│   │   │   └── style.css
 │   │   └── js/
-│   │       └── script.js            # JavaScript
-│   │
+│   │       └── script.js
 │   ├── templates/
-│   │   ├── index.html               # Home page
-│   │   ├── about.html               # About page
-│   │   └── findyourcrop.html        # Prediction page
-│   │
-│   ├── app.py                       # Flask backend
-│   ├── model.pkl                    # Trained ML model
-│   └── scaler.pkl                   # Feature scaler
+│   │   ├── index.html
+│   │   ├── about.html
+│   │   └── findyourcrop.html
+│   ├── app.py
+│   ├── model.pkl
+│   └── scaler.pkl
 │
 ├── screenshots/
 │   ├── about.jpg
@@ -61,14 +58,13 @@ The project covers the complete machine learning pipeline including:
 │   └── result.jpg
 │
 ├── TRAINING/
-│   ├── Crop_Recommendation.ipynb    # Model training notebook
-│   ├── model.pkl                    # Generated model
-│   └── scaler.pkl                   # Generated scaler
+│   ├── Crop_Recommendation.ipynb
+│   ├── model.pkl
+│   └── scaler.pkl
 │
-├── LICENSE                          # MIT License
-├── README.md                        # Project documentation
-└── requirements.txt                 # Python dependencies
-
+├── LICENSE
+├── README.md
+└── requirements.txt
 ---
 
 ## 🤖 Machine Learning Model
@@ -137,16 +133,16 @@ python app.py
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/home.jpg)
 
 ### ℹ️ About Page
-![About](screenshots/about.png)
+![About](screenshots/about.jpg)
 
 ### 🌱 Prediction Page
-![Prediction](screenshots/predict.png)
+![Prediction](screenshots/predict.jpg)
 
 ### ✅ Crop Recommendation Result
-![Result](screenshots/result.png)
+![Result](screenshots/result.jpg)
 
 ---
 # 👩‍💻 Author
