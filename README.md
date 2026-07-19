@@ -32,52 +32,37 @@ The project covers the complete machine learning pipeline including:
 ---
 
 ## 📂 Project Structure
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ ```text
 OptiCrop-Smart-Agricultural-Production-Optimization-Engine/
 ├── dataset/
 │   └── Crop_recommendation.csv
 ├── flask/
-│   ├── app.py
-│   ├── model.pkl
-│   ├── scaler.pkl
 │   ├── static/
 │   │   ├── css/
 │   │   │   └── style.css
 │   │   └── js/
 │   │       └── script.js
-│   └── templates/
-│       ├── index.html
-│       ├── about.html
-│       ├── findyourcrop.html
-│       └── result.html
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── about.html
+│   │   └── findyourcrop.html
+│   ├── app.py
+│   ├── model.pkl
+│   └── scaler.pkl
+├── screenshots/
+│   ├── about.jpg
+│   ├── home.jpg
+│   ├── predict.jpg
+│   └── result.jpg
 ├── TRAINING/
 │   ├── Crop_Recommendation.ipynb
 │   ├── model.pkl
 │   └── scaler.pkl
-├── screenshots/
-│   ├── home.jpg
-│   ├── about.jpg
-│   ├── predict.jpg
-│   └── result.jpg
+├── .gitignore
+├── LICENSE
 ├── README.md
-├── requirements.txt
-└── LICENSE
-
+└── requirements.txt
+```
 
 
  
